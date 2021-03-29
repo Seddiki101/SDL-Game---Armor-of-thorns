@@ -1,9 +1,10 @@
-ex4:pp.o fct.o 
-	gcc pp.o fct.o -o ex4 -lSDL -lSDL_mixer -lSDL_image -lSDL_ttf 
-pp.o:pp.c
-	gcc -c pp.c -lSDL -lSDL_mixer -lSDL_image -lSDL_ttf 
-fct.o:fct.c
-	gcc -c fct.c -lSDL -lSDL_mixer -lSDL_image -lSDL_ttf 
-
+pro:main.o savexload.o 
+	gcc main.o savexload.o -o pro -lSDL -lSDL_mixer -lSDL_image -lSDL_ttf 
+	
+main.o:main.c
+	gcc -c main.c -lSDL -lSDL_mixer -lSDL_image -lSDL_ttf 
+	
+savexload.o:savexload.c
+	gcc -c savexload.c -lSDL -lSDL_mixer -lSDL_image -lSDL_ttf 
 
 
