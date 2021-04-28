@@ -1,9 +1,8 @@
-ex4:pp.o fct.o 
-	gcc pp.o fct.o -o ex4 -lSDL -lSDL_mixer -lSDL_image -lSDL_ttf 
-pp.o:pp.c
-	gcc -c pp.c -lSDL -lSDL_mixer -lSDL_image -lSDL_ttf 
-fct.o:fct.c
-	gcc -c fct.c -lSDL -lSDL_mixer -lSDL_image -lSDL_ttf 
-
-
-
+enigma:assets/scripts/enigma.o assets/scripts/enigma_functions.o assets/scripts/enigma_fill.o 
+	gcc enigma.o -o program -lSDL -lSDL_mixer -lSDL_image -lSDL_ttf
+assets/scripts/enigma.o:enigma.c
+	gcc -c enigma.c -lSDL -lSDL_mixer -lSDL_image -lSDL_ttf
+assets/scripts/enigma_functions.o:assets/scripts/enigma_functions.c
+	gcc -c assets/scripts/enigma_functions.c -lSDL -lSDL_mixer -lSDL_image -lSDL_ttf
+assets/scripts/enigma_fill.o:assets/scripts/enigma_fill.c
+	gcc -c assets/scripts/enigma_fill.c -lSDL -lSDL_mixer -lSDL_image -lSDL_ttf
