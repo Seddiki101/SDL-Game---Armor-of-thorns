@@ -1,3 +1,7 @@
 # SDL-Game---Armor-of-thorns
 :v
-This is a private project , please refer to the owner of the file for further notice .
+
+Detective game made with pure C and sdl library 
+
+#to_Build use
+make
